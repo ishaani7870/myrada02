@@ -1,1 +1,1 @@
-print("savitri from Gulbarga")
+print("savitri from Bidar")
