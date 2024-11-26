@@ -1,4 +1,8 @@
-uvicorn
-fastapi
+python-dotenv
 python-multipart
-pymongo
+pymongo[srv]
+fastapi
+uvicorn
+pydantic
+pytest
+httpx
