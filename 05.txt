@@ -1,5 +1,0 @@
-
-print("Manivannan myrada")
-
-print("Darshan myrada")
-
