@@ -10,13 +10,13 @@ app = FastAPI()
 app.mount("/fe", StaticFiles(directory="fe"),name="fe")
 
 app.mongodb_client = MongoClient(config["CONNECTION_STRING"])
-app.database = app.mongodb_client[config["DB_BOOK"]]
+app.database = app.mongodb_client[config["DB_AREA"]]
 
-# from be.author.api import author_api as author_apiroutes
-# app.include_router(author_apiroutes, tags=["authors"], prefix="/api/author")
+from be.area.api import area_api as area_apiroutes
+app.include_router(area_apiroutes, tags=["areas"], prefix="/api/area")
 
-# from be.book.api import book_api as book_apiroutes
-# app.include_router(book_apiroutes, tags=["books"], prefix="/api/book")
+from be.center.api import center_api as center_apiroutes
+app.include_router(center_apiroutes, tags=["centers"], prefix="/api/center")
 
 # from be.member.api import member_api as member_apiroutes
 # app.include_router(member_apiroutes, tags=["members"], prefix="/api/member")
