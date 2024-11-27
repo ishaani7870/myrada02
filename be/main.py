@@ -18,6 +18,10 @@ app.include_router(area_apiroutes, tags=["areas"], prefix="/api/area")
 from be.center.api import center_api as center_apiroutes
 app.include_router(center_apiroutes, tags=["centers"], prefix="/api/center")
 
+
+from be.donor.api import donor_api as donor_apiroutes
+app.include_router(donor_apiroutes, tags=["donors"], prefix="/api/donor")
+
 # from be.member.api import member_api as member_apiroutes
 # app.include_router(member_apiroutes, tags=["members"], prefix="/api/member")
 

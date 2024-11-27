@@ -10,7 +10,7 @@ function render_donor_table(data){
 		<table class="table table-striped" id="tbl_ch">
 		  <thead  class="table-dark">
 			<tr>
-			  <th scope="col">donor</th>			  
+			  <th scope="col">Donor</th>			  
 			  <th scope="col" class="text-donor">Action</th>
 			</tr>
 		  </thead>

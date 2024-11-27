@@ -1,8 +1,12 @@
+
+alert('hii');
+
 function load_officers(){
 	$.getScript('/fe/pages/officer/officer_list.js')
 
 
 function load_donors(){
+	alert('ishaani');
 	$.getScript('/fe/pages/donor/donor_list.js')
 }
 
@@ -16,6 +20,7 @@ function load_centers(){
 }
 
 load_officers();
+
 	
 
 

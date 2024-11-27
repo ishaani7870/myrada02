@@ -10,14 +10,14 @@ function init_donor_item(id){
 
 function save_donor(){
 	formData = {
-		"name":$('#donorname').val()
+		"donor_name":$('#donorname').val()
 	}
-	var donorId = $('#donorid').val();
+	var centerId = $('#donorid').val();
 	
 	var jsonData = JSON.stringify(formData);
 	console.log(jsonData)
 	$.post({
-			url:"/api/donor/" + donorId,
+			url:"/api/donor/" + centerId,
 			contentType:'application/json',
 			data: jsonData
 			})			
@@ -32,5 +32,5 @@ function show_donor_list(){
 
 function render_details(data){
 	$('#donorid').val(data._id)
-	$('#donorname').val(data.name)
+	$('#donorname').val(data.donor_name)
 }
